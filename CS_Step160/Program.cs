@@ -10,6 +10,18 @@ namespace CS_Step160
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a number:");
+            int input1 = Convert.ToInt32(Console.ReadLine());
+            Class1 classObj = new Class1();
+            classObj.voidMethod(input1);
+            classObj.outMethod(out input1);
+
+            classObj.overloadMethod(20);
+            classObj.overloadMethod(20, 41);
+
+            Console.WriteLine(Class2.staticClassMethod("This is the static class"));
+
+            Console.ReadLine();
         }
     }
 }
